@@ -1,0 +1,5 @@
+var minStartValue = function(nums) {
+let m =0, s= 0;
+for (let num of nums){ s += num; m = Math.min(m, s); }
+return 1 - m;  
+};
